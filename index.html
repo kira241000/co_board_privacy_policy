@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for CoBoard - Shared Whiteboard App">
+    <title>Privacy Policy - CoBoard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-color: #ffffff;
+            --bg-secondary: #f9fafb;
+            --border-color: #e5e7eb;
+            --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-secondary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            box-shadow: var(--shadow-lg);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            scroll-margin-top: 2rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .highlight {
+            background-color: #fef3c7;
+            padding: 1rem;
+            border-left: 4px solid #f59e0b;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-info {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-info strong {
+            color: var(--text-primary);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 1.5rem;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .toc {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1f2937;
+                --bg-secondary: #111827;
+                --text-primary: #f9fafb;
+                --text-secondary: #d1d5db;
+                --border-color: #374151;
+            }
+
+            body {
+                background-color: var(--bg-secondary);
+            }
+
+            .highlight {
+                background-color: #78350f;
+                border-left-color: #f59e0b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: <span id="lastUpdated"></span></p>
+        </header>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#information-we-collect">2. Information We Collect</a></li>
+                <li><a href="#how-we-use-information">3. How We Use Your Information</a></li>
+                <li><a href="#data-storage">4. Data Storage and Security</a></li>
+                <li><a href="#third-party-services">5. Third-Party Services</a></li>
+                <li><a href="#data-sharing">6. Data Sharing and Disclosure</a></li>
+                <li><a href="#your-rights">7. Your Rights</a></li>
+                <li><a href="#children-privacy">8. Children's Privacy</a></li>
+                <li><a href="#changes">9. Changes to This Policy</a></li>
+                <li><a href="#contact">10. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <section id="introduction" class="section">
+            <h2>1. Introduction</h2>
+            <p>
+                Welcome to CoBoard ("we," "our," or "us"). CoBoard is a shared whiteboard application 
+                that allows users to collaborate in real-time on digital whiteboards. We are committed 
+                to protecting your privacy and ensuring the security of your personal information.
+            </p>
+            <p>
+                This Privacy Policy explains how we collect, use, store, and protect your information 
+                when you use our mobile and web applications (collectively, the "Service"). By using 
+                CoBoard, you agree to the collection and use of information in accordance with this policy.
+            </p>
+        </section>
+
+        <section id="information-we-collect" class="section">
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Account Information</h3>
+            <p>When you create an account with CoBoard, we collect:</p>
+            <ul>
+                <li><strong>Email address:</strong> Used for authentication and account management</li>
+                <li><strong>Password:</strong> Securely hashed and stored for authentication purposes</li>
+                <li><strong>User ID:</strong> A unique identifier assigned to your account</li>
+            </ul>
+
+            <h3>2.2 Board and Drawing Data</h3>
+            <p>To provide our collaborative whiteboard functionality, we collect and store:</p>
+            <ul>
+                <li><strong>Board content:</strong> All drawings, strokes, and annotations you create on whiteboards</li>
+                <li><strong>Board metadata:</strong> Board names, creation dates, and modification timestamps</li>
+                <li><strong>Collaboration data:</strong> Information about board members, permissions, and access levels</li>
+                <li><strong>Invitation data:</strong> Email addresses and tokens used for board invitations</li>
+            </ul>
+
+            <h3>2.3 Usage Data</h3>
+            <p>We may automatically collect certain information about how you use the Service:</p>
+            <ul>
+                <li><strong>Connection information:</strong> Connectivity status to ensure real-time synchronization</li>
+                <li><strong>Device information:</strong> Device type, operating system, and app version</li>
+                <li><strong>Local preferences:</strong> Theme settings (light/dark mode) and other app preferences stored locally on your device</li>
+            </ul>
+
+            <h3>2.4 Information from Third Parties</h3>
+            <p>
+                We may receive information about you from third-party authentication services 
+                (specifically Supabase) that you use to sign in to our Service.
+            </p>
+        </section>
+
+        <section id="how-we-use-information" class="section">
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            
+            <ul>
+                <li><strong>To provide and maintain our Service:</strong> Create and manage your account, enable board creation and collaboration</li>
+                <li><strong>To enable real-time collaboration:</strong> Synchronize drawing data across all devices and users in real-time</li>
+                <li><strong>To manage board sharing:</strong> Process invitations, manage board access, and coordinate permissions</li>
+                <li><strong>To send notifications:</strong> Send you invitations to join boards and other service-related communications</li>
+                <li><strong>To improve our Service:</strong> Analyze usage patterns to enhance user experience and fix issues</li>
+                <li><strong>To ensure security:</strong> Monitor for fraudulent activity, unauthorized access, and security threats</li>
+                <li><strong>To comply with legal obligations:</strong> Meet legal requirements and respond to lawful requests</li>
+            </ul>
+        </section>
+
+        <section id="data-storage" class="section">
+            <h2>4. Data Storage and Security</h2>
+            
+            <h3>4.1 Data Storage</h3>
+            <p>
+                Your data is stored securely using Supabase, a third-party cloud database service. 
+                All data is encrypted in transit and at rest. Board content, user information, and 
+                collaboration data are stored in Supabase's secure infrastructure.
+            </p>
+            <p>
+                Some preferences and settings may be stored locally on your device using secure 
+                local storage mechanisms.
+            </p>
+
+            <h3>4.2 Security Measures</h3>
+            <p>We implement various security measures to protect your information:</p>
+            <ul>
+                <li>Encrypted data transmission using secure protocols (HTTPS/TLS)</li>
+                <li>Secure password storage with industry-standard hashing algorithms</li>
+                <li>Access controls and authentication requirements</li>
+                <li>Regular security assessments and updates</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Important:</strong> While we implement strong security measures, no method of 
+                transmission over the Internet or electronic storage is 100% secure. We cannot 
+                guarantee absolute security, but we are committed to protecting your data using 
+                industry best practices.
+            </div>
+        </section>
+
+        <section id="third-party-services" class="section">
+            <h2>5. Third-Party Services</h2>
+            <p>CoBoard uses the following third-party services:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Processed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Supabase</strong></td>
+                        <td>Backend-as-a-Service (authentication, database, real-time synchronization)</td>
+                        <td>User accounts, board data, drawing content, collaboration data</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                These third-party services have their own privacy policies governing how they collect, 
+                use, and protect your information. We encourage you to review Supabase's privacy policy 
+                at <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">https://supabase.com/privacy</a>.
+            </p>
+            <p>
+                Your use of these third-party services is subject to their terms of service and privacy 
+                policies. We are not responsible for the privacy practices of these third parties.
+            </p>
+        </section>
+
+        <section id="data-sharing" class="section">
+            <h2>6. Data Sharing and Disclosure</h2>
+            
+            <h3>6.1 With Other Users</h3>
+            <p>
+                When you share a board or invite others to collaborate, the invited users will have 
+                access to:
+            </p>
+            <ul>
+                <li>The board's content and all drawings</li>
+                <li>Your email address (as shown to board members)</li>
+                <li>Information about your participation in the board</li>
+            </ul>
+
+            <h3>6.2 With Service Providers</h3>
+            <p>
+                We share your information with third-party service providers (such as Supabase) 
+                who perform services on our behalf. These providers are contractually obligated 
+                to protect your information and use it only for the purposes we specify.
+            </p>
+
+            <h3>6.3 Legal Requirements</h3>
+            <p>We may disclose your information if required to do so by law or in response to:</p>
+            <ul>
+                <li>Valid legal process, subpoenas, or court orders</li>
+                <li>Government requests</li>
+                <li>To protect our rights, property, or safety, or that of our users</li>
+            </ul>
+
+            <h3>6.4 Business Transfers</h3>
+            <p>
+                In the event of a merger, acquisition, or sale of assets, your information may 
+                be transferred to the acquiring entity, subject to the same privacy protections.
+            </p>
+        </section>
+
+        <section id="your-rights" class="section">
+            <h2>7. Your Rights</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+
+            <ul>
+                <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
+                <li><strong>Data Portability:</strong> Request a copy of your data in a portable format</li>
+                <li><strong>Withdraw Consent:</strong> Withdraw consent for data processing where applicable</li>
+                <li><strong>Opt-out:</strong> Opt out of certain data processing activities</li>
+            </ul>
+
+            <p>
+                To exercise these rights, please contact us using the information provided in the 
+                "Contact Us" section below. We will respond to your request within a reasonable timeframe.
+            </p>
+
+            <div class="highlight">
+                <strong>Account Deletion:</strong> If you delete your account, all your boards and 
+                associated data will be permanently removed from our systems. However, content you 
+                shared with other users may remain accessible to them until they delete it.
+            </div>
+        </section>
+
+        <section id="children-privacy" class="section">
+            <h2>8. Children's Privacy</h2>
+            <p>
+                CoBoard is not intended for children under the age of 13 (or the minimum age required 
+                by applicable law in your jurisdiction). We do not knowingly collect personal information 
+                from children under 13. If you believe we have collected information from a child under 
+                13, please contact us immediately, and we will take steps to delete such information.
+            </p>
+        </section>
+
+        <section id="changes" class="section">
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any 
+                material changes by:
+            </p>
+            <ul>
+                <li>Updating the "Last updated" date at the top of this policy</li>
+                <li>Posting a notice in the app or on our website</li>
+                <li>Sending you an email notification (if you have provided your email address)</li>
+            </ul>
+            <p>
+                Your continued use of the Service after any changes to this Privacy Policy constitutes 
+                your acceptance of the updated policy. We encourage you to review this policy periodically.
+            </p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>10. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or 
+                our data practices, please contact us:
+            </p>
+            
+            <div class="contact-info">
+                <p>
+                    <strong>App Name:</strong> CoBoard<br>
+                    <strong>Developer:</strong> Greenwich and Burki<br>
+                    <strong>Email:</strong> <a href="mailto:privacy@greenwichandburki.com">privacy@greenwichandburki.com</a>
+                </p>
+                <p style="margin-top: 1rem;">
+                    We are committed to addressing your privacy concerns and will respond to your 
+                    inquiry as soon as possible.
+                </p>
+            </div>
+        </section>
+
+        <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary);">
+            <p>&copy; <span id="currentYear"></span> CoBoard. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+    <script>
+        // Set last updated date
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Highlight current section in TOC (optional enhancement)
+        const sections = document.querySelectorAll('.section');
+        const tocLinks = document.querySelectorAll('.toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.style.fontWeight = 'normal';
+                link.style.color = 'var(--primary-color)';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.fontWeight = 'bold';
+                    link.style.color = 'var(--primary-dark)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
